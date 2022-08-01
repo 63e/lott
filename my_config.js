@@ -135,17 +135,17 @@ module.exports = Object.freeze({
         /**
          * - 在uid里检索的页数
          */
-        uid_scan_page: 3,
+        uid_scan_page: 6,
 
         /**
          * - 在tag里检索的页数
          */
-        tag_scan_page: 3,
+        tag_scan_page: 6,
 
         /**
          * - 获取专栏数量
          */
-        article_scan_page: 3,
+        article_scan_page: 6,
 
         /**
          * - 专栏创建时间距离现在的最大天数
@@ -235,7 +235,7 @@ module.exports = Object.freeze({
         /**
          * - 是否发送随机动态(防止被开奖机过滤)
          */
-        create_dy: false,
+        create_dy: true,
 
         /**
          * 随机动态类型
@@ -243,7 +243,7 @@ module.exports = Object.freeze({
          * - 1 推荐视频
          * - -1 混合
          */
-        create_dy_type: 0,
+        create_dy_type: -1,
 
         /**
          * - 结束运行时发送随机动态的数量
@@ -259,7 +259,7 @@ module.exports = Object.freeze({
          * @property {number} img_height
          * @param { string | Picture[] } content
          */
-        dy_contents: ['[doge]', '[doge][doge]'],
+        dy_contents: ['[doge]', '[doge][doge]',"祝${uname}早日百大!","${uname}你是我的神"],
 
         /**
          * - 每转发x条抽奖动态就发送x条随机动态
@@ -312,7 +312,7 @@ module.exports = Object.freeze({
             '永不缺席 永不中奖 永不放弃！', '万一呢', '在', '冲吖~', '来了', '万一', '[保佑][保佑]', '从未中，从未停', '[吃瓜]', '[抠鼻][抠鼻]',
             '来力', '秋梨膏', '[呲牙]', '从不缺席', '分子', '可以', '恰', '不会吧', '1', '好',
             'rush', '来来来', 'ok', '冲', '凑热闹', '我要我要[打call]', '我还能中！让我中！！！', '大家都散了吧，已经抽完了，是我的', '我是天选之子', '给我中一次吧！',
-            '坚持不懈，迎难而上，开拓创新！', '[OK][OK]', '我来抽个奖', '中中中中中中', '[doge][doge][doge]', '我我我',
+            '坚持不懈，迎难而上，开拓创新！', '[OK][OK]', '我来抽个奖', '中中中中中中', '[doge][doge][doge]', '我我我',"祝${uname}早日百大!"
         ],
 
         /**
@@ -347,12 +347,12 @@ module.exports = Object.freeze({
         /**
          * 是否发送运行状态通知
          */
-        notice_running_state: false,
+        notice_running_state: true,
 
         /**
          * - 获取私信页数
          */
-        check_session_pages: 16,
+        check_session_pages: 20,
 
         /**
          * - 清理白名单uid或dyid
@@ -410,7 +410,7 @@ module.exports = Object.freeze({
          * 1
          * [1,2,4]
          */
-        clear_dynamic_type: [1]
+        clear_dynamic_type: [1,2,4,8]
     },
 
     /**
